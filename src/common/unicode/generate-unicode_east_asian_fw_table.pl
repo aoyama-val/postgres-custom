@@ -36,7 +36,7 @@ foreach my $line (<ARGV>)
 
 	($first, $last) = map(hex, ($first, $last));
 
-	if ($width eq 'F' || $width eq 'W')
+	if ($width eq 'F' || $width eq 'W' || $width eq 'A')
 	{
 		# fullwidth/wide characters
 		if (!defined($range_start))
